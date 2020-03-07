@@ -22,10 +22,10 @@ function CounterContainer() {
 
     return (
         <Counter
-            count={count}
-            onIncrease={onIncrease}
-            onDecrease={onDecrease}
-            onIncreaseBy={onIncreaseBy}
+        // count={count} // useCounter에 따른 props삭제.
+        // onIncrease={onIncrease}
+        // onDecrease={onDecrease}
+        // onIncreaseBy={onIncreaseBy}
         />
     )
 }
