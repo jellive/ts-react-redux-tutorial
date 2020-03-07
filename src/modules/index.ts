@@ -1,10 +1,12 @@
 import counter from './counter'
 import { combineReducers } from 'redux'
 import todos from './todos'
+import folder from './folder'
 
 const rootReducer = combineReducers({
     counter,
-    todos
+    todos,
+    folder
 })
 
 export default rootReducer
