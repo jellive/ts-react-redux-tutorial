@@ -31,8 +31,9 @@ const initialState: TodosState = [
 function todos(state: TodosState = initialState, action: TodosAction) {
     switch (action.type) {
         case ADD_TODO:
+            const nextId = Math.max(...state.map(todo => todo.id)) + 1;
             return state.concat({
-                id: state[state.length].id + 1,
+                id: nextId,
                 text: action.payload,
                 done: false
             })
