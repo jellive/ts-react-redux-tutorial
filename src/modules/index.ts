@@ -1,8 +1,10 @@
 import counter from './counter'
 import { combineReducers } from 'redux'
+import todos from './todos'
 
 const rootReducer = combineReducers({
-    counter
+    counter,
+    todos
 })
 
 export default rootReducer
